@@ -1,4 +1,4 @@
-# devJR-portfolio-starter
+ # devJR-portfolio-starter
 If you are new at development and don't know what to do to demonstrate your skills, this repo is to you :D
 
 ## How this works?
@@ -35,18 +35,14 @@ To create some interesting css projects you can dig into some important aspects 
 - Some examples of small apps: [Submarine](https://codepen.io/ajerez/pen/EaEEOW), [Loader](https://codepen.io/Bidji/pen/dPEzwq) and [Star Wars](https://codepen.io/donovanh/pen/pJzwEw).
 - What you can do: You could do a simple draw with some animation or make some buttons with [transitions effects](https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/).
 2. Bootstrap
-- Where to learn:
-- Some examples of small apps:
-- What you can do:
-3. Responsive layout(using cols)
-- Where to learn:
-- Some examples of small apps:
-- What you can do:
-4. Layout systems (flexbox and grid)
+- Where to learn: [GetBootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
+- Some examples of small apps:[simple examples](https://tutorialzine.com/2015/06/12-time-saving-bootstrap-examples).
+- What you can do: You can do a responsive page using bootstrap col-system with 3 different components of bootstrap.
+3. Layout systems (flexbox and grid)
 - Where to learn: [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [GRID](https://css-tricks.com/snippets/css/complete-guide-grid/).
 - Some examples of small apps:
 - What you can do:
-5. Pre-processors
+4. Pre-processors
 - Where to learn:
 - Some examples of small apps:
 - What you can do:
