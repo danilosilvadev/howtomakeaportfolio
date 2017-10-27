@@ -49,7 +49,7 @@ To create some interesting css projects you can dig into some important aspects 
 - Small examples:
 - What you can do: You can create a page a little more complex layout with several columns and responsive to not just phones but also tablets.
 4. Pre-processors (sass or less)
-- Where to learn:[Sass](http://sass-lang.com/guide) and [Less](http://lesscss.org/).
+- Where to learn: [Sass](http://sass-lang.com/guide) and [Less](http://lesscss.org/).
 - Small examples:
 - What you can do: You can translate some of your older projects to sass or less and compare the difference between them and css.
 
