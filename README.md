@@ -19,7 +19,7 @@ I assume that you already have basic knowledge in basic (html, css and js). Fron
   - Pre-processors
 - JavaScrip
   - DOM
-  - GET and POST requests
+  - AJAX
   - CRUD
   - API consuming
 - Frontend frameworks(optional)
@@ -57,17 +57,17 @@ To create some interesting css projects you can dig into some important aspects 
 ### Javascript
 
 1. DOM
-- Where to learn:
-- Small examples:
-- What you can do:
-2. GET and POST requests
-- Where to learn:
-- Small examples:
-- What you can do:
+- Where to learn: [Mastering the DOM access](http://krasimirtsonev.com/blog/article/Mastering-the-DOM-access-JavaScript-set-get-value)and [W3Schools](https://www.w3schools.com/js/js_htmldom.asp).
+- Small examples:[W3Schools examples](https://www.w3schools.com/js/js_dom_examples.asp)
+- What you can do: You can create a form that sends data through the DOM and display the text inside a <ul> list.
+2. AJAX requests
+- Where to learn: [MDN](https://developer.mozilla.org/pt-BR/docs/AJAX), [W3Schools](https://www.w3schools.com/js/js_ajax_intro.asp).
+- Small examples: 
+- What you can do: You can create a folder with 2 others folders inside it. Than create a file that has a dropdown menu where the options are the folders name(using ajax) and when clicked shows the content of the folder.
 3. CRUD
-- Where to learn:
-- Small examples:
-- What you can do:
+- Where to learn: [CRUD article](https://medium.com/@etiennerouzeaud/a-simple-crud-application-with-javascript-ebc82f688c59), [CRUD tutorial](https://www.codeproject.com/Articles/753724/JavaScript-Front-End-Web-App-Tutorial-Part), [TodoList from W3School](https://www.w3schools.com/howto/howto_js_todolist.asp).
+- Small examples: [Todolist on codepen](https://codepen.io/jagaranga/pen/FmdbL), [Vanilla JS CRUD](https://codepen.io/bobby5develops/pen/QwJzQm).
+- What you can do: Create a todolist and also a second list of the tasks setted to "done". Be creative, use css3 animations when the states changes!
 4. API consuming
 - Where to learn:
 - Small examples:
@@ -87,3 +87,5 @@ To create some interesting css projects you can dig into some important aspects 
 - Where to learn:
 - Small examples:
 - What you can do:
+
+*PS: Site with todolists implemmented in several js frameworks: http://todomvc.com/*
