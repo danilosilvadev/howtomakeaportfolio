@@ -1,4 +1,4 @@
- # devJR-portfolio-starter
+# devJR-portfolio-starter
 If you are new at development and don't know what to do to demonstrate your skills, this repo is to you :D
 
 ## How this works?
@@ -35,7 +35,7 @@ Needs data here.
 
 ### CSS
 
-To create some interesting css projects you can dig into some important aspects of css beyond basics, that they are:
+ To create some interesting css projects you can dig into some important aspects of css beyond basics, that they are:
 
 1. CSS3
 - Where to learn: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3).
@@ -57,7 +57,7 @@ To create some interesting css projects you can dig into some important aspects 
 
 1. DOM
 - Where to learn: [Mastering the DOM access](http://krasimirtsonev.com/blog/article/Mastering-the-DOM-access-JavaScript-set-get-value)and [W3Schools](https://www.w3schools.com/js/js_htmldom.asp).
-- Small examples:[W3Schools examples](https://www.w3schools.com/js/js_dom_examples.asp).
+- Small examples: [W3Schools examples](https://www.w3schools.com/js/js_dom_examples.asp).
 - What you can do: You can create a form that sends data through the DOM and display the text inside a 'ul' list.
  2. AJAX requests
 - Where to learn: [MDN](https://developer.mozilla.org/pt-BR/docs/AJAX) and [W3Schools](https://www.w3schools.com/js/js_ajax_intro.asp).
