@@ -45,7 +45,8 @@ Needs data here.
 - What you can do: You could do a simple draw with some animation or make some buttons with [transitions effects](https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/).
 2. Bootstrap
 - Where to learn: [GetBootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
-- Small examples: [simple examples](https://tutorialzine.com/2015/06/12-time-saving-bootstrap-examples).- What you can do: You can do a responsive page using bootstrap col-system with 3 different components of bootstrap.
+- Small examples: [simple examples](https://tutorialzine.com/2015/06/12-time-saving-bootstrap-examples).
+- What you can do: You can do a responsive page using bootstrap col-system with 3 different components of bootstrap.
 3. Layout systems (flexbox and grid)
 - Where to learn: [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [GRID](https://css-tricks.com/snippets/css/complete-guide-grid/).
 - Small examples:
@@ -57,7 +58,7 @@ Needs data here.
 
 ### Javascript
 
-1. DOM
+ 1. DOM
 - Where to learn: [Mastering the DOM access](http://krasimirtsonev.com/blog/article/Mastering-the-DOM-access-JavaScript-set-get-value)and [W3Schools](https://www.w3schools.com/js/js_htmldom.asp).
 - Small examples: [W3Schools examples](https://www.w3schools.com/js/js_dom_examples.asp).
 - What you can do: You can create a form that sends data through the DOM and display the text inside a 'ul' list.
@@ -70,7 +71,7 @@ Needs data here.
 - Small examples: [Todolist on codepen](https://codepen.io/jagaranga/pen/FmdbL) and [Vanilla JS CRUD](https://codepen.io/bobby5develops/pen/QwJzQm).
 - What you can do: Create a todolist and also a second list of the tasks setted to "done". Be creative, use css3 animations when the states changes!
 4. API consuming
-- Where to learn: Using [ajax](https://www.codecademy.com/pt-BR/tracks/parse) and using [jquery](https://spring.io/guides/gs/consuming-rest-jquery/).
+- Where to learn: Using [ajax](https://www.codecademy.com/pt-BR/tracks/parse) and using [jquery](https://spring.io/guides/gs/consuming-rest-jquery/) and [axios](https://github.com/axios/axios)(this one needs to know NPM and node modules manegement, it is optional to use this).
 - Small examples:
 - What you can do: You can make a search field that receives a string, and returns some information from some public API [here](https://github.com/toddmotto/public-apis).
 5. Patterns and important JS features
