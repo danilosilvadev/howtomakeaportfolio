@@ -71,7 +71,7 @@ Needs data here.
 - Small examples: [Todolist on codepen](https://codepen.io/jagaranga/pen/FmdbL) and [Vanilla JS CRUD](https://codepen.io/bobby5develops/pen/QwJzQm).
 - What you can do: Create a todolist and also a second list of the tasks setted to "done". Be creative, use css3 animations when the states changes!
 4. API consuming
-- Where to learn: Using [ajax](https://www.codecademy.com/pt-BR/tracks/parse), using [jquery](https://spring.io/guides/gs/consuming-rest-jquery/) and [axios](https://github.com/axios/axios)(this one needs to know NPM and node modules manegement, it is optional to use this).
+- Where to learn: Using [ajax](https://www.codecademy.com/pt-BR/tracks/parse), using [jquery](https://spring.io/guides/gs/consuming-rest-jquery/) or using [axios](https://github.com/axios/axios)(this one needs to know NPM and node modules manegement, it is optional to use this).
 - Small examples:
 - What you can do: You can make a search field that receives a string, and returns some information from some public API [here](https://github.com/toddmotto/public-apis).
 5. Patterns and important JS features
