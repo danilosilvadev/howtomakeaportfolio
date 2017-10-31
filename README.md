@@ -1,4 +1,4 @@
-# devJR-portfolio-starter
+  # devJR-portfolio-starter
 If you are new at development and don't know what to do to demonstrate your skills, this repo is to you :D
 
 ## How this works?
@@ -23,11 +23,9 @@ I assume that you already have basic knowledge in basic (html, css and js). Fron
   - CRUD
   - API consuming
   - Patterns/important JS features
-- Frontend frameworks(optional)
-  - react
-  - angular4
-  - vue
-  - Jquery
+  - Frontend frameworks(optional)
+  
+*PS: Each topic of this repo has several options, so you can choose wich one fits your goal with coding.
 
 ### Backend
 
@@ -78,23 +76,8 @@ Needs data here.
 - Where to learn: [MVC](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvc), [closures and module pattern](https://medium.com/@danilosilvadev/a-tale-about-closures-js-58f5037b712d), types of [for loops](https://medium.com/@danilosilvadev/the-js-for-wer-rangers-never-more-use-the-classic-for-loop-de9f054014c3), [this](https://medium.com/@danilosilvadev/the-four-tests-of-this-in-js-technique-88a26346611c) and [singleton pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript).
 - SmallExamples:
 - What you can do:
-
-### Frameworks frontend
-
-1. React
-- Where to learn:
-- Small examples:
-- What you can do:
-2. Angular4
-- Where to learn:
-- Small examples:
-- What you can do:
-3. Vue
-- Where to learn:
-- Small examples:
-- What you can do:
-4. Jquery
-- Where to learn: [Docs](https://learn.jquery.com/),
+6. Frameworks frontend
+- Where to learn: [React](https://reactjs.org/docs/hello-world.html), [vue](https://vuejs.org/v2/guide/), [angular4](https://angular.io/docs), [jquery](https://learn.jquery.com/).
 - Small examples:
 - What you can do:
 
