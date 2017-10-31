@@ -73,7 +73,7 @@ Needs data here.
 - Small examples:
 - What you can do: You can make a search field that receives a string, and returns some information from some public API [here](https://github.com/toddmotto/public-apis).
 - Simple example:
-```
+```js
 //This shows in the console random jokes about Chuck Norris.
 (function loadDoc() {
       var xhttp = new XMLHttpRequest();
