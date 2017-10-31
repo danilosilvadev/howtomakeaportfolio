@@ -25,7 +25,7 @@ I assume that you already have basic knowledge in basic (html, css and js). Fron
   - Design Patterns/important JS features
   - Frontend frameworks(optional)
   
-*PS: Each topic of this repo has several options, so you can choose wich one fits your goal with coding.
+*PS: Each topic of this repo has several options, so you can choose wich one fits your goal with coding.*
 
 ### Backend
 
