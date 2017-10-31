@@ -22,7 +22,7 @@ I assume that you already have basic knowledge in basic (html, css and js). Fron
   - AJAX
   - CRUD
   - API consuming
-  - Patterns/important JS features
+  - Design Patterns/important JS features
   - Frontend frameworks(optional)
   
 *PS: Each topic of this repo has several options, so you can choose wich one fits your goal with coding.
