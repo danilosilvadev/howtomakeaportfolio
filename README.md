@@ -1,4 +1,4 @@
-  # devJR-portfolio-starter
+# devJR-portfolio-starter
 If you are new at development and don't know what to do to demonstrate your skills, this repo is to you :D
 
 ## How this works?
@@ -33,7 +33,7 @@ Needs data here.
 
 # Frontend
 
-### CSS
+### (#CSS)
 
  To create some interesting css projects you can dig into some important aspects of css beyond basics, that they are:
 
