@@ -81,7 +81,6 @@ Needs data here.
         if (this.readyState == 4 && this.status == 200) {
         var obj = JSON.parse(this.response);  //Parser to extract just the information that i want.
             console.log(obj.value.joke); 
-        //document.getElementById("demo").innerHTML = this.responseText;
         }
       };
       xhttp.open("GET", "http://api.icndb.com/jokes/random", false);
