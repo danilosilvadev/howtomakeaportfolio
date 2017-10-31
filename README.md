@@ -72,6 +72,22 @@ Needs data here.
 - Where to learn: Using [ajax](https://www.codecademy.com/pt-BR/tracks/parse), using [jquery](https://spring.io/guides/gs/consuming-rest-jquery/) or using [axios](https://github.com/axios/axios)(this one needs to know NPM and node modules manegement, it is optional to use this).
 - Small examples:
 - What you can do: You can make a search field that receives a string, and returns some information from some public API [here](https://github.com/toddmotto/public-apis).
+- Simple example:
+```
+//This shows in the console random jokes about Chuck Norris.
+(function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        var obj = JSON.parse(this.response);  //Parser to extract just the information that i want.
+            console.log(obj.value.joke); 
+        //document.getElementById("demo").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "http://api.icndb.com/jokes/random", false);
+      xhttp.send();
+    } )()
+```
 5. Patterns and important JS features
 - Where to learn: [MVC](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvc), [closures and module pattern](https://medium.com/@danilosilvadev/a-tale-about-closures-js-58f5037b712d), types of [for loops](https://medium.com/@danilosilvadev/the-js-for-wer-rangers-never-more-use-the-classic-for-loop-de9f054014c3), [this](https://medium.com/@danilosilvadev/the-four-tests-of-this-in-js-technique-88a26346611c) and [singleton pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript).
 - SmallExamples:
