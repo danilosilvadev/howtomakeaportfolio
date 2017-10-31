@@ -12,12 +12,12 @@ This repo gives ideas to small apps that can show different fields of basic prog
 
 I assume that you already have basic knowledge in basic (html, css and js). Frontend development you will need to demonstrate your skills with:
 
-- CSS technologies
+- [CSS technologies](#CSS)
   - CSS3
   - Bootstrap
   - Layout Systems
   - Pre-processors
-- JavaScrip
+- [JavaScrip](#Javascript)
   - DOM
   - AJAX
   - CRUD
