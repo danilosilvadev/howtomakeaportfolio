@@ -70,7 +70,9 @@ Needs data here.
 - What you can do: Create a todolist and also a second list of the tasks setted to "done". Be creative, use css3 animations when the states changes!
 - Sample:
 
-**html**
+TODO using DOM and es2015:
+
+**HTML**
 
 ```html
 <body>
@@ -104,7 +106,6 @@ createLiElement = (value) => {
     buttonUpdate.innerHTML = "Update";
     buttonUpdate.onclick = (e, addEventListener) => updateBtn(closure(), e);
     li.setAttribute("id", children);
-
     const closure = () => {
         return {
             ul: ul,
