@@ -69,6 +69,29 @@ Needs data here.
 - Small examples: [Todolist on codepen](https://codepen.io/jagaranga/pen/FmdbL) and [Vanilla JS CRUD](https://codepen.io/bobby5develops/pen/QwJzQm).
 - What you can do: Create a todolist and also a second list of the tasks setted to "done". Be creative, use css3 animations when the states changes!
 - Sample:
+
+**html**
+
+```html
+<body>
+    <h1>Simple Todo List</h1>
+
+    Name:
+    <input id="formAdd" type="text" name="name">
+    <button onclick="add()">Add</button>
+    </br>
+    <div id="todoList">
+        <ul id="list">
+
+        </ul>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+```
+
+**JS:**
+
 ```js
 createLiElement = (value) => {
     const ul = document.getElementById("list");
@@ -95,9 +118,6 @@ createLiElement = (value) => {
     li.appendChild(buttonDelete);
     li.appendChild(buttonUpdate);
     ul.appendChild(li)
-
-
-
 };
 
 add = () => {
