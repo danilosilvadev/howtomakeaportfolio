@@ -70,7 +70,64 @@ Needs data here.
 - What you can do: Create a todolist and also a second list of the tasks setted to "done". Be creative, use css3 animations when the states changes!
 - Sample:
 ```js
+createLiElement = (value) => {
+    const ul = document.getElementById("list");
+    const li = document.createElement("li");
+    const children = ul.children.length + 1;
+    const buttonDelete = document.createElement("button");
+    const buttonUpdate = document.createElement("button");
+    buttonDelete.innerHTML = "Delete";
+    buttonDelete.onclick = deleteBtn;
+    buttonUpdate.innerHTML = "Update";
+    buttonUpdate.onclick = (e, addEventListener) => updateBtn(closure(), e);
+    //buttonUpdate.addEventListener('click', () => updateBtn('click', value));
+    li.setAttribute("id", children);
 
+    const closure = () => {
+        return {
+            ul: ul,
+            li: li,
+            buttonDelete: buttonDelete,
+            buttonUpdate: buttonUpdate
+        }
+    }
+    li.appendChild(document.createTextNode(value + ' '));
+    li.appendChild(buttonDelete);
+    li.appendChild(buttonUpdate);
+    ul.appendChild(li)
+
+
+
+};
+
+add = () => {
+    const addValue = document.getElementById("formAdd").value;
+    return (addValue === null || addValue === '') ? alert('Please fill this form') : createLiElement(addValue);
+};
+
+deleteBtn = (e) => {
+    const liId = e.path[1].id;
+    const elem = document.getElementById(liId);
+    elem.parentNode.removeChild(elem);
+};
+
+updateBtn = (closure, e) => {
+    const value = document.getElementById("formAdd").value;    
+    return (value === null || value === '') ? alert('Write in the field!') : (() => {
+        const liId = e.path[1].id;
+        const elem = document.getElementById(liId);
+        closure.buttonDelete.innerHTML = "Delete";
+        closure.buttonDelete.onclick = deleteBtn;
+        closure.buttonUpdate.innerHTML = "Update";
+        const div = document.createElement("div");
+        const item = closure.li.appendChild(div);
+        item.setAttribute("id", liId);        
+        div.appendChild(document.createTextNode(value + " "))
+        div.appendChild(closure.buttonDelete);
+        div.appendChild(closure.buttonUpdate);
+        elem.parentNode.replaceChild(item, elem);
+    })();
+};
 ```
 4. API consuming
 - Where to learn: Using [ajax](https://www.codecademy.com/pt-BR/tracks/parse), using [jquery](https://spring.io/guides/gs/consuming-rest-jquery/) or using [axios](https://github.com/axios/axios)(this one needs to know NPM and node modules manegement, it is optional to use this).
