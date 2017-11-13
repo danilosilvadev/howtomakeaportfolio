@@ -104,6 +104,7 @@ createLiElement = (value) => {
     buttonDelete.innerHTML = "Delete";
     buttonDelete.onclick = deleteBtn;
     buttonUpdate.innerHTML = "Update";
+    document.getElementById("formAdd").value = '';
     buttonUpdate.onclick = (e, addEventListener) => updateBtn(closure(), e);
     li.setAttribute("id", children);
     const closure = () => {
@@ -146,6 +147,7 @@ updateBtn = (closure, e) => {
         div.appendChild(closure.buttonDelete);
         div.appendChild(closure.buttonUpdate);
         elem.parentNode.replaceChild(item, elem);
+        document.getElementById("formAdd").value = '';        
     })();
 };
 ```
