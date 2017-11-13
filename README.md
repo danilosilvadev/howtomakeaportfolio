@@ -103,7 +103,6 @@ createLiElement = (value) => {
     buttonDelete.onclick = deleteBtn;
     buttonUpdate.innerHTML = "Update";
     buttonUpdate.onclick = (e, addEventListener) => updateBtn(closure(), e);
-    //buttonUpdate.addEventListener('click', () => updateBtn('click', value));
     li.setAttribute("id", children);
 
     const closure = () => {
