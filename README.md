@@ -161,7 +161,7 @@ updateBtn = (closure, e) => {
 (function loadDoc() {
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+      if (this.readyState == 4 && this.status == 200) {
         var obj = JSON.parse(this.response);  //Parser to extract just the information that i want.
             console.log(obj.value.joke); 
         }
@@ -176,7 +176,7 @@ updateBtn = (closure, e) => {
 - What you can do:
 - Samples:
 Pagination example(this can be apply to blogs pages, sites of news and any site situation with lists in multiple pages) -
-````js
+```js
 // This is a pagination Sample:
 
 // The constructor takes in an array of items and a integer indicating how many
