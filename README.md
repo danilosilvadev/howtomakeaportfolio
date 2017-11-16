@@ -18,6 +18,7 @@ I assume that you already have basic knowledge in basic (html, css and js). Fron
   - Layout Systems
   - Pre-processors
 - [JavaScrip](#Javascript)
+  - es2015
   - DOM
   - AJAX
   - CRUD
@@ -55,6 +56,8 @@ Needs data here.
 - What you can do: You can translate some of your older projects to sass or less and compare the difference between them and css.
 
 ### <a name="Javascript">Javascript</a>
+
+ 0. es2015
 
  1. DOM
 - Where to learn: [Mastering the DOM access](http://krasimirtsonev.com/blog/article/Mastering-the-DOM-access-JavaScript-set-get-value)and [W3Schools](https://www.w3schools.com/js/js_htmldom.asp).
