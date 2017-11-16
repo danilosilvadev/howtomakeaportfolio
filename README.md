@@ -171,7 +171,7 @@ updateBtn = (closure, e) => {
       };
       xhttp.open("GET", "http://api.icndb.com/jokes/random", false);
       xhttp.send();
-    } )()
+    } )();
 ```
 5. Patterns and important JS features
 - Where to learn: [MVC](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvc), [closures and module pattern](https://medium.com/@danilosilvadev/a-tale-about-closures-js-58f5037b712d), types of [for loops](https://medium.com/@danilosilvadev/the-js-for-wer-rangers-never-more-use-the-classic-for-loop-de9f054014c3), [this](https://medium.com/@danilosilvadev/the-four-tests-of-this-in-js-technique-88a26346611c) and [singleton pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript).
