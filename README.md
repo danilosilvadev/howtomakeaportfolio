@@ -226,11 +226,13 @@ function PaginationHelper(collection, itemsPerPage){
   this.itemCount = function () { return this.collection.length; };
   this.pageCount = function () { return Math.ceil(this.collection.length / this.itemsPerPage); };
   this.pageItemCount = function (idx) {
-    return this.pageCount() === ++idx ? this.itemCount() % this.itemsPerPage : this.pageCount() < ++idx ? -1 : this.itemsPerPage;
+    return this.pageCount() === ++idx ? this.itemCount() % this.itemsPerPage :
+    this.pageCount() < ++idx ? -1 : this.itemsPerPage;
   };
   this.pageIndex = function (idx) {
     if (idx < 0) return -1;
-    return ++idx > this.itemCount() ? -1 : ++idx === this.itemCount() ? this.pageCount() - 1 : idx / this.itemsPerPage ^ 0;
+    return ++idx > this.itemCount() ? -1 : ++idx === this.itemCount() ? this.pageCount() - 1 :
+    idx / this.itemsPerPage ^ 0;
   }
 }
 ```
