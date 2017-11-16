@@ -174,6 +174,63 @@ updateBtn = (closure, e) => {
 - Where to learn: [MVC](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvc), [closures and module pattern](https://medium.com/@danilosilvadev/a-tale-about-closures-js-58f5037b712d), types of [for loops](https://medium.com/@danilosilvadev/the-js-for-wer-rangers-never-more-use-the-classic-for-loop-de9f054014c3), [this](https://medium.com/@danilosilvadev/the-four-tests-of-this-in-js-technique-88a26346611c) and [singleton pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript).
 - SmallExamples:
 - What you can do:
+- Samples:
+Pagination example(this can be apply to blogs pages, sites of news and any site situation with lists in multiple pages) -
+````js
+// This is a pagination Sample:
+
+// The constructor takes in an array of items and a integer indicating how many
+// items fit within a single page
+function PaginationHelper(collection, itemsPerPage){
+  this.collection = collection, this.itemsPerPage = itemsPerPage;
+}
+
+// returns the number of items within the entire collection
+PaginationHelper.prototype.itemCount = function() {
+  return this.collection.length;
+}
+
+// returns the number of pages
+PaginationHelper.prototype.pageCount = function() {
+  return Math.floor(this.collection.length/this.itemsPerPage)+1;
+}
+
+// returns the number of items on the current page. page_index is zero based.
+// this method should return -1 for pageIndex values that are out of range
+PaginationHelper.prototype.pageItemCount = function(pageIndex) {
+  return pageIndex > this.pageCount() - 1 || pageIndex < 0 ?
+  -1 : pageIndex !== this.pageCount() - 1 ?
+  this.itemsPerPage : this.collection.length -
+  (this.itemsPerPage*this.pageCount())
+  + this.itemsPerPage;
+}
+
+// determines what page an item is on. Zero based indexes
+// this method should return -1 for itemIndex values that are out of range
+PaginationHelper.prototype.pageIndex = function(itemIndex) {
+  return itemIndex >= this.collection.length || itemIndex < 0 ?
+  -1 : itemIndex === 0 ? 0 : Math.round(++itemIndex/helper.itemsPerPage);
+}
+
+var helper = new PaginationHelper(['1',2,3,4,5,'6',7,8,9,10,'11',12,13,14,15,'16',17,18,19,20,'21', 22], 5);
+console.log(helper.pageItemCount(4));
+
+//The same code but in another way, using scope strategie:
+
+function PaginationHelper(collection, itemsPerPage){
+  this.collection = collection;
+  this.itemsPerPage = itemsPerPage;
+  this.itemCount = function () { return this.collection.length; };
+  this.pageCount = function () { return Math.ceil(this.collection.length / this.itemsPerPage); };
+  this.pageItemCount = function (idx) {
+    return this.pageCount() === ++idx ? this.itemCount() % this.itemsPerPage : this.pageCount() < ++idx ? -1 : this.itemsPerPage;
+  };
+  this.pageIndex = function (idx) {
+    if (idx < 0) return -1;
+    return ++idx > this.itemCount() ? -1 : ++idx === this.itemCount() ? this.pageCount() - 1 : idx / this.itemsPerPage ^ 0;
+  }
+}
+```
 6. Frameworks frontend
 - Where to learn: [React](https://reactjs.org/docs/hello-world.html), [vue](https://vuejs.org/v2/guide/), [angular4](https://angular.io/docs), [jquery](https://learn.jquery.com/).
 - Small examples:
