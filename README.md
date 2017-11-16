@@ -147,8 +147,8 @@ updateBtn = (closure, e) => {
         div.appendChild(closure.buttonDelete);
         div.appendChild(closure.buttonUpdate);
         elem.parentNode.replaceChild(item, elem);
-        document.getElementById("formAdd").value = '';        
-    })();
+        document.getElementById("formAdd").value = '';      
+        })();
 };
 ```
 4. API consuming
@@ -215,7 +215,7 @@ PaginationHelper.prototype.pageIndex = function(itemIndex) {
 var helper = new PaginationHelper(['1',2,3,4,5,'6',7,8,9,10,'11',12,13,14,15,'16',17,18,19,20,'21', 22], 5);
 console.log(helper.pageItemCount(4));
 
-//The same code but in another way, using scope strategie:
+//The same code but in another way, using scope strategy:
 
 function PaginationHelper(collection, itemsPerPage){
   this.collection = collection;
