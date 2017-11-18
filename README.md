@@ -220,16 +220,16 @@ console.log(helper.pageItemCount(4));
 
 //The same code but in another way, using scope strategy:
 
-function PaginationHelper(collection, itemsPerPage){
+const PaginationHelper = (collection, itemsPerPage) => {
   this.collection = collection;
   this.itemsPerPage = itemsPerPage;
-  this.itemCount = function () { return this.collection.length; };
-  this.pageCount = function () { return Math.ceil(this.collection.length / this.itemsPerPage); };
-  this.pageItemCount = function (idx) {
-    return this.pageCount() === ++idx ? this.itemCount() % this.itemsPerPage :
+  this.itemCount = () => return this.collection.length;
+  this.pageCount = () => return Math.ceil(this.collection.length / this.itemsPerPage);
+  this.pageItemCount = idx => {
+    this.pageCount() === ++idx ? this.itemCount() % this.itemsPerPage :
     this.pageCount() < ++idx ? -1 : this.itemsPerPage;
   };
-  this.pageIndex = function (idx) {
+  this.pageIndex = idx => {
     if (idx < 0) return -1;
     return ++idx > this.itemCount() ? -1 : ++idx === this.itemCount() ? this.pageCount() - 1 :
     idx / this.itemsPerPage ^ 0;
