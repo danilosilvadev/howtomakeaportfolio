@@ -223,8 +223,8 @@ console.log(helper.pageItemCount(4));
 const PaginationHelper = (collection, itemsPerPage) => {
   this.collection = collection;
   this.itemsPerPage = itemsPerPage;
-  this.itemCount = () => return this.collection.length;
-  this.pageCount = () => return Math.ceil(this.collection.length / this.itemsPerPage);
+  this.itemCount = () => this.collection.length;
+  this.pageCount = () => Math.ceil(this.collection.length / this.itemsPerPage);
   this.pageItemCount = idx => {
     this.pageCount() === ++idx ? this.itemCount() % this.itemsPerPage :
     this.pageCount() < ++idx ? -1 : this.itemsPerPage;
