@@ -18,9 +18,9 @@ I assume that you already have basic knowledge in basic (html, css and js). Fron
   - Layout Systems
   - Pre-processors
 - [JavaScrip](#Javascript)
-  - es2015
   - DOM
   - AJAX
+  - es2015
   - CRUD
   - API consuming
   - Design Patterns/important JS features
@@ -64,15 +64,15 @@ Needs data here.
 - Where to learn: [MDN](https://developer.mozilla.org/pt-BR/docs/AJAX) and [W3Schools](https://www.w3schools.com/js/js_ajax_intro.asp).
 - Small examples: 
 - What you can do: You can create a folder with 2 others folders inside it. Than create a file that has a dropdown menu where the options are the folders name(using ajax) and when clicked shows the content of the folder.
- 3. CRUD
+3. es2015
+- Where to learn: [Babel](https://babeljs.io/learn-es2015/).
+- Small examples: [devHints](https://devhints.io/es6).
+- What you can do: You can convert your last examples to es2015 and compare how many lines you spared.
+ 4. CRUD
 - Where to learn: [CRUD article](https://medium.com/@etiennerouzeaud/a-simple-crud-application-with-javascript-ebc82f688c59), [CRUD tutorial](https://www.codeproject.com/Articles/753724/JavaScript-Front-End-Web-App-Tutorial-Part) and [TodoList from W3School](https://www.w3schools.com/howto/howto_js_todolist.asp).
 - Small examples: [Todolist on codepen](https://codepen.io/jagaranga/pen/FmdbL) and [Vanilla JS CRUD](https://codepen.io/bobby5develops/pen/QwJzQm).
 - What you can do: Create a todolist and also a second list of the tasks setted to "done". Be creative, use css3 animations when the states changes!
 - Sample:
-4. es2015
-- Where to learn: [Babel](https://babeljs.io/learn-es2015/).
-- Small examples: [devHints](https://devhints.io/es6).
-- What you can do: You can convert your last examples to es2015 and compare how many lines you spared.
 
 TODO using DOM and es2015:
 
