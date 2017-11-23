@@ -56,9 +56,6 @@ Needs data here.
 - What you can do: You can translate some of your older projects to sass or less and compare the difference between them and css.
 
 ### <a name="Javascript">Javascript</a>
-
- 0. es2015
-
  1. DOM
 - Where to learn: [Mastering the DOM access](http://krasimirtsonev.com/blog/article/Mastering-the-DOM-access-JavaScript-set-get-value)and [W3Schools](https://www.w3schools.com/js/js_htmldom.asp).
 - Small examples: [W3Schools examples](https://www.w3schools.com/js/js_dom_examples.asp).
@@ -72,6 +69,10 @@ Needs data here.
 - Small examples: [Todolist on codepen](https://codepen.io/jagaranga/pen/FmdbL) and [Vanilla JS CRUD](https://codepen.io/bobby5develops/pen/QwJzQm).
 - What you can do: Create a todolist and also a second list of the tasks setted to "done". Be creative, use css3 animations when the states changes!
 - Sample:
+4. es2015
+- Where to learn: [Babel](https://babeljs.io/learn-es2015/).
+- Small examples: [devHints](https://devhints.io/es6).
+- What you can do: You can convert your last examples to es2015 and compare how many lines you spared.
 
 TODO using DOM and es2015:
 
