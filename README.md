@@ -23,6 +23,7 @@ I assume that you already have basic knowledge in basic (html, css and js). Fron
   - es2015
   - CRUD
   - API consuming
+  - jQuery
   - Design Patterns/important JS features
   - Frontend frameworks(optional)
   
@@ -174,7 +175,82 @@ updateBtn = (closure, e) => {
       xhttp.send();
     } )();
 ```
-5. Patterns and important JS features
+5.jQuery
+- Where to learn: 
+- Small examples: 
+- What you can do: 
+- Sample: The same todolist of the CRUD sample, but using jQuery instead of DOM.
+
+```html
+<html>
+<head></head>
+<body>
+    <h1>Simple Todo List</h1>
+
+    Name:
+    <input id="formAdd" type="text" name="name">
+    <button onclick="add()">Add</button>
+    <br />
+    <div id="todoList">
+        <ul id="lista">
+
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jtest.js"></script>
+</body>
+</html>
+```
+```js
+createLiElement = value => {
+  const ul = $("#lista");
+  const children = $("#lista li").length+1;
+  const li = $("<li></li>").attr("id", children);
+  const button = new buttons();
+  button.buttonDelete.click(() => deleteBtn(button.buttonDelete));
+  button.buttonUpdate.click(e => updateBtn(closure));
+  const closure = {
+    ul: ul,
+    li: li,
+    buttonDelete: button.buttonDelete,
+    buttonUpdate: button.buttonUpdate
+  }
+  li.append(document.createTextNode(value + ' ')).append(button.buttonDelete).append(button.buttonUpdate);
+  ul.append(li);
+  $("#formAdd").val('');
+};
+
+buttons = function() {
+  return {
+    buttonDelete : $("<button></button>").text('delete'),
+    buttonUpdate : $("<button></button>").text('update')
+  }
+};
+
+add = () => {
+  const addValue = $("#formAdd").val();
+  return (addValue === null || addValue === '') ? alert('Please fill this form') : createLiElement(addValue);
+};
+
+deleteBtn = button => {
+  button.parent().remove();
+}
+
+updateBtn = (closure) => {
+  const value = $("#formAdd").val();
+  return (value === null || value === '') ? alert('Write in the field!') : (() => {
+    const itemOld = $('#'+closure.li.attr('id'));
+    const itemNew = $('<li></li>').attr('id', closure.li.attr('id')).
+    append(document.createTextNode(value + " ")).append(closure.buttonDelete).
+    append(closure.buttonUpdate);
+    itemOld.replaceWith(itemNew);
+    $("#formAdd").val('');
+  })();
+};
+```
+
+6. Patterns and important JS features
 - Where to learn: [MVC](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvc), [closures and module pattern](https://medium.com/@danilosilvadev/a-tale-about-closures-js-58f5037b712d), types of [for loops](https://medium.com/@danilosilvadev/the-js-for-wer-rangers-never-more-use-the-classic-for-loop-de9f054014c3), [this](https://medium.com/@danilosilvadev/the-four-tests-of-this-in-js-technique-88a26346611c) and [singleton pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript).
 - SmallExamples:
 - What you can do:
@@ -237,7 +313,7 @@ const PaginationHelper = (collection, itemsPerPage) => {
   }
 }
 ```
-6. Frameworks frontend
+7. Frameworks frontend
 - Where to learn: [React](https://reactjs.org/docs/hello-world.html), [vue](https://vuejs.org/v2/guide/), [angular4](https://angular.io/docs), [jquery](https://learn.jquery.com/).
 - Small examples:
 - What you can do:
