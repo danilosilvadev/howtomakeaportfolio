@@ -206,7 +206,7 @@ updateBtn = (closure, e) => {
 createLiElement = value => {
   const ul = $("#lista");
   const children = $("#lista li").length+1;
-  const li = $("<li></li>").attr("id", children);
+  const li = $("<li>").attr("id", children);
   const button = new buttons();
   button.buttonDelete.click(() => deleteBtn(button.buttonDelete));
   button.buttonUpdate.click(e => updateBtn(closure));
@@ -223,8 +223,8 @@ createLiElement = value => {
 
 buttons = function() {
   return {
-    buttonDelete : $("<button></button>").text('delete'),
-    buttonUpdate : $("<button></button>").text('update')
+    buttonDelete : $("<button>").text('delete'),
+    buttonUpdate : $("<button>").text('update')
   }
 };
 
@@ -241,7 +241,7 @@ updateBtn = (closure) => {
   const value = $("#formAdd").val();
   return (value === null || value === '') ? alert('Write in the field!') : (() => {
     const itemOld = $('#'+closure.li.attr('id'));
-    const itemNew = $('<li></li>').attr('id', closure.li.attr('id')).
+    const itemNew = $('<li>').attr('id', closure.li.attr('id')).
     append(document.createTextNode(value + " ")).append(closure.buttonDelete).
     append(closure.buttonUpdate);
     itemOld.replaceWith(itemNew);
