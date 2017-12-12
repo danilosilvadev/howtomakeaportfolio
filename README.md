@@ -14,6 +14,7 @@ I assume that you already have basic knowledge in basic (html, css and js). Fron
 
 - [CSS technologies](#CSS)
   - CSS3
+  - Responsivity
   - Bootstrap
   - Layout Systems
   - Pre-processors
@@ -43,15 +44,19 @@ Needs data here.
 - Where to learn: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3).
 - Small examples: [Submarine](https://codepen.io/ajerez/pen/EaEEOW), [Loader](https://codepen.io/Bidji/pen/dPEzwq) and [Star Wars](https://codepen.io/donovanh/pen/pJzwEw).
 - What you can do: You could do a simple draw with some animation or make some buttons with [transitions effects](https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/).
-2. Bootstrap
+2. Responsivity
+- Where to learn: [W3schools](https://www.w3schools.com/css/css_rwd_intro.asp), [mobile first](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/Mobile_first) and [more mdn](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/responsive_design_building_blocks).
+- Small examples: 
+- What you can do:
+3. Bootstrap
 - Where to learn: [GetBootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
 - Small examples: [simple examples](https://tutorialzine.com/2015/06/12-time-saving-bootstrap-examples).
 - What you can do: You can do a responsive page using bootstrap col-system with 3 different components of bootstrap.
-3. Layout systems (flexbox and grid)
+4. Layout systems (flexbox and grid)
 - Where to learn: [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [GRID](https://css-tricks.com/snippets/css/complete-guide-grid/).
 - Small examples:
 - What you can do: You can create a page a little more complex layout with several columns and responsive to not just phones but also tablets.
-4. Pre-processors (sass or less)
+5. Pre-processors (sass or less)
 - Where to learn: [Sass](http://sass-lang.com/guide) and [Less](http://lesscss.org/).
 - Small examples:
 - What you can do: You can translate some of your older projects to sass or less and compare the difference between them and css.
