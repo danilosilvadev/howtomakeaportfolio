@@ -49,8 +49,10 @@ Needs data here.
 - Small examples: 
 - What you can do:
 - Sample: 
-```<p data-height="265" data-theme-id="0" data-slug-hash="OzvmqV" data-default-tab="html,result" data-user="danilosilvadev" data-embed-version="2" data-pen-title="Responsive" class="codepen">See the Pen <a href="https://codepen.io/danilosilvadev/pen/OzvmqV/">Responsive</a> by Danilo (<a href="https://codepen.io/danilosilvadev">@danilosilvadev</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>```
+```
+<p data-height="265" data-theme-id="0" data-slug-hash="OzvmqV" data-default-tab="html,result" data-user="danilosilvadev" data-embed-version="2" data-pen-title="Responsive" class="codepen">See the Pen <a href="https://codepen.io/danilosilvadev/pen/OzvmqV/">Responsive</a> by Danilo (<a href="https://codepen.io/danilosilvadev">@danilosilvadev</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+```
 3. Bootstrap
 - Where to learn: [GetBootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
 - Small examples: [simple examples](https://tutorialzine.com/2015/06/12-time-saving-bootstrap-examples).
