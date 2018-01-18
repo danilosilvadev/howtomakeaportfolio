@@ -57,6 +57,7 @@ Needs data here.
 - Where to learn: [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [GRID](https://css-tricks.com/snippets/css/complete-guide-grid/).
 - Small examples:
 - What you can do: You can create a page a little more complex layout with several columns and responsive to not just phones but also tablets.
+- Sample: https://codepen.io/danilosilvadev/pen/ZvmKyj
 5. Pre-processors (sass or less)
 - Where to learn: [Sass](http://sass-lang.com/guide) and [Less](http://lesscss.org/).
 - Small examples:
