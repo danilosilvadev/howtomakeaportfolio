@@ -57,7 +57,7 @@ Needs data here.
 - Where to learn: [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [GRID](https://css-tricks.com/snippets/css/complete-guide-grid/).
 - Small examples:
 - What you can do: You can create a page a little more complex layout with several columns and responsive to not just phones but also tablets.
-- Sample:
+- Sample: Flexbox —
 
     ![Demo](https://media.giphy.com/media/3ohjV6uMN53tgrAs12/giphy.gif)
 
