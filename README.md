@@ -181,11 +181,22 @@ updateBtn = (closure, e) => {
       if (this.readyState == 4 && this.status == 200) {
         var obj = JSON.parse(this.response);  //Parser to extract just the information that i want.
             console.log(obj.value.joke); 
-        }
+        } else {
+          console.log('error');
+        }
       };
       xhttp.open("GET", "http://api.icndb.com/jokes/random", false);
       xhttp.send();
     } )();
+```
+The same Using JQuery:
+```js
+(function loadDoc() {
+    $.get("http://api.icndb.com/jokes/random", function(data){console.log(data.value.joke); })
+    .fail(function(){
+        console.log('error');
+    });
+})();
 ```
 5.jQuery
 - Where to learn: 
