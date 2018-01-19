@@ -189,7 +189,7 @@ updateBtn = (closure, e) => {
       xhttp.send();
     } )();
 ```
-The same Using JQuery:
+The same using JQuery:
 ```js
 (function loadDoc() {
     $.get("http://api.icndb.com/jokes/random", function(data){console.log(data.value.joke); })
