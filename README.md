@@ -5,6 +5,8 @@ If you are new at development and don't know what to do to demonstrate your skil
 
 This repo gives ideas to small apps that can show different fields of basic programming to create your initial portolio. Also shows how to create those apps and where to find the knowledge enough to do it. ENJOY!
 
+PS: All the samples(not small examples) were created by me, feel free to give me feedbacks on issues. :D
+
 
 ## Table of Contents
 
