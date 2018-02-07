@@ -342,5 +342,90 @@ const PaginationHelper = (collection, itemsPerPage) => {
 - Where to learn: [React](https://reactjs.org/docs/hello-world.html), [vue](https://vuejs.org/v2/guide/), [angular4](https://angular.io/docs), [jquery](https://learn.jquery.com/).
 - Small examples:
 - What you can do:
+- Sample: A simple react todolist.
+```js
+import React, { Component } from 'react';
+
+class MyComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleUpdate = this.handleUpdate.bind(this);
+    }
+    state = {
+        list: [],
+        showForm: false,
+        counter: 0,
+        idMirror: null,
+    };
+
+    isEmpty(item) {
+        return (item === null || item === "" || item === undefined) ? true : false;
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        const counter = this.state.counter + 1
+        return this.isEmpty(this.state.item) ? alert('Writte something') :
+                this.setState({
+                    list: [
+                        ...this.state.list,
+                        { item: this.state.item, id: counter }
+                    ],
+                    counter
+                }, () => {event.target.reset(); this.setState({item: ''})} );
+    }
+
+    handleUpdate(e) {
+        e.preventDefault();
+        const {list, idMirror} = this.state;
+        const index = list.findIndex(x => x.id === idMirror);
+        this.isEmpty(this.state.item) ? alert('Writte something') :
+            list.splice(index, list[index] = { id: idMirror, item: this.state.item })
+            this.setState({ showForm: false })
+        }
+
+    render() {
+
+        return (
+            <div>
+
+                {/*Add item*/}
+                <form onSubmit={this.handleSubmit}>
+                    <label>
+                        <span>Add item</span>
+                        <input type="text" onChange={e => this.setState({ item: e.target.value })} />
+                    </label>
+                    <input type="submit" value="Add" />
+                </form>
+
+                {/*Show list*/}
+                {this.state.list.map((list) => {
+                    return <li key={list.id}>
+                        <span>{list.id} - {list.item}</span><br />
+                        <button onClick={() => this.setState({ idMirror: list.id, showForm: true })}>Replace</button>
+                        <button onClick={() => this.setState({ list: this.state.list.filter(item => item.id !== list.id), showForm: false })}>Delete</button>
+                    </li>;
+                })}
+
+                {/*UPDATE*/}
+                <form onSubmit={this.handleUpdate}>
+
+                    {this.state.showForm === true && <div><label>
+                        <input type="text" onChange={e => this.setState({ item: e.target.value })} />
+                    </label>
+                        <label>
+                            <input type="submit" value="Update" />
+                        </label>
+                        <button onClick={() => this.setState({ showForm: false })}> Cancel </button> </div>}
+                </form>
+
+            </div>
+        )
+    }
+}
+
+export default MyComponent
+```
 
 *PS: Site with todolists implemmented in several js frameworks: http://todomvc.com/*
